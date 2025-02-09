@@ -19,7 +19,7 @@ export interface Separate {
   isUsedCount: number
 }
 export interface IPrizeConfig {
-  id: number | string
+  id: string
   name: string
   sort: number
   isAll: boolean

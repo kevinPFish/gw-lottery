@@ -1,10 +1,10 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { useI18n } from 'vue-i18n'
+// import { useI18n } from 'vue-i18n'
 import { useRoute, useRouter } from 'vue-router'
 import { configRoutes } from '../../router'
 
-const { t } = useI18n()
+// const { t } = useI18n()
 const router = useRouter()
 const route = useRoute()
 const menuList = ref<any[]>(configRoutes.children)
@@ -67,7 +67,7 @@ function skip(path: string) {
     </ul>
     <router-view class="flex-1 mt-5" />
   </div>
-  <footer class="p-10 rounded footer footer-center bg-base-200 text-base-content">
+  <!-- <footer class="p-10 rounded footer footer-center bg-base-200 text-base-content">
     <nav class="grid grid-flow-col gap-4">
       <a class="cursor-pointer link link-hover text-inherit" target="_blank" href="https://1kw20.fun">{{ t('footer.self-reflection') }}</a>
     </nav>
@@ -91,7 +91,7 @@ function skip(path: string) {
       </p>
       <p>Copyright © 2024 - All right reserved by Log1997</p>
     </aside>
-  </footer>
+  </footer> -->
 </template>
 
 <style scoped></style>

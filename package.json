@@ -1,5 +1,5 @@
 {
-    "name": "log-lottery",
+    "name": "gw-lottery",
     "private": true,
     "version": "0.0.3",
     "type": "module",
@@ -13,7 +13,8 @@
         "test:ui": "vitest --ui",
         "preview": "vite preview",
         "lint": "eslint ./src",
-        "lint:fix": "eslint ./src --fix"
+        "lint:fix": "eslint ./src --fix",
+        "format": "prettier --write ."
     },
     "dependencies": {
         "@tweenjs/tween.js": "^23.1.2",
@@ -39,7 +40,6 @@
         "zod": "^3.23.8"
     },
     "devDependencies": {
-        "@antfu/eslint-config": "^3.9.2",
         "@eslint/eslintrc": "^3.2.0",
         "@eslint/js": "^9.15.0",
         "@iconify-json/ep": "^1.2.1",
@@ -59,6 +59,7 @@
         "autoprefixer": "^10.4.20",
         "daisyui": "^4.12.14",
         "eslint": "^9.15.0",
+        "eslint-config-prettier": "^9.1.0",
         "eslint-plugin-vue": "^9.31.0",
         "globals": "^15.12.0",
         "happy-dom": "^15.11.6",
@@ -66,6 +67,7 @@
         "jsdom": "^25.0.1",
         "path": "^0.12.7",
         "postcss": "^8.4.49",
+        "prettier": "3.4.2",
         "rollup-plugin-visualizer": "^5.12.0",
         "sass": "^1.81.0",
         "sass-loader": "^16.0.3",

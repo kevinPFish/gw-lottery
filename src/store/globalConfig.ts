@@ -221,7 +221,7 @@ export const useGlobalConfig = defineStore('global', {
     // 设置
     setLanguage(language: string) {
       this.globalConfig.language = language
-      i18n.global.locale.value = language
+      i18n.global.locale.value = language as 'zhCn' | 'en'
     },
     // 设置背景图片
     setBackground(background: any) {
